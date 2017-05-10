@@ -23,6 +23,7 @@ class readMCP3008(threading.Thread):
             # grab all available input from MCP3008
 	    read_pot = pot.value
 	    read_ldr = ldr.value
+	    sleep(0.5)
 	
             if self.terminated:
 	        break
